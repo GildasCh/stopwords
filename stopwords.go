@@ -25,7 +25,7 @@ import (
 var (
 	remTags      = regexp.MustCompile(`<[^>]*>`)
 	oneSpace     = regexp.MustCompile(`\s{2,}`)
-	unicodeWords = regexp.MustCompile(`[\pL\p{Mc}\p{Mn}-_']+`)
+	unicodeWords = regexp.MustCompile(`[\pL0-9\p{Mc}\p{Mn}-_']+`)
 )
 
 // CleanString removes useless spaces and stop words from string content.
